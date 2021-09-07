@@ -20,6 +20,9 @@ def word_count(file):
     # return dictionary
     
     # counts.items()
-    for item in counts.items():
-        print(item)
-    return item
+    # for item in counts.items():
+    #     print(item)
+    # return item
+    for key, value in counts.items():
+        print(f"{key} {value}")
+    return None
