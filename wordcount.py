@@ -18,5 +18,8 @@ def word_count(file):
             counts[word] = counts.get(word,0) + 1
     # letter_count[letter] = letter_counts.get(letter,0) +1
     # return dictionary
-    print(counts)
-    return counts
+    
+    # counts.items()
+    for item in counts.items():
+        print(item)
+    return item
