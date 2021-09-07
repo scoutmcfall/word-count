@@ -11,18 +11,22 @@ def word_count(file):
     for line in text_file:
         # for word in file 
         #make a list of words
+        line = line.rstrip()
         words = line.split(" ")
             #now we need to add each word to the dictionary as it's own key 
+            #if statement that gets rid of /n?
         for word in words:
         #dictionary.get(word, 0) += 1
             counts[word] = counts.get(word,0) + 1
     # letter_count[letter] = letter_counts.get(letter,0) +1
     # return dictionary
-    
+   
     # counts.items()
     # for item in counts.items():
     #     print(item)
     # return item
     for key, value in counts.items():
+        #if "/n" in key:
+            #del counts[key, value]
         print(f"{key} {value}")
     return None
